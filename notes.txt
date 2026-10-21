@@ -8,6 +8,8 @@ mkdir database/
 create-books-sqlite3-query
 insert-books-sqlite3-query
 
+
+how do i add this while this stays a comment and the file will connect the same time....? 
 -- File: create-books-sqlite3-query / insert ... 
 -- Author: Nagy Bianka
 -- Copyright: 2026, Nagy Bianka
@@ -19,6 +21,9 @@ insert-books-sqlite3-query
 Database.java added
 Sqlite.java added
     try-catch
+Books.java added 
+    constructors
+    getters and setters
 
 
 
