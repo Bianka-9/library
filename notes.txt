@@ -1,0 +1,25 @@
+F1 > Java... > Maven project
+add .gitignore (leave database in for easier grading)
+add a readme.md if you want to
+add dependencies in pom.xml (sqlite-jdbc from xerial)   OK
+check if mvc directory structure is needed [no]         OK
+
+mkdir database/
+create-books-sqlite3-query
+insert-books-sqlite3-query
+
+-- File: create-books-sqlite3-query / insert ... 
+-- Author: Nagy Bianka
+-- Copyright: 2026, Nagy Bianka
+-- Group: Szoft II/N
+-- Date: 2026-10-21
+-- Github: https://github.com/Bianka-9/
+-- Licenc: MIT
+
+Database.java added
+Sqlite.java added
+    try-catch
+
+
+
+
