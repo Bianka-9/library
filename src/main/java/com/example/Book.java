@@ -1,32 +1,42 @@
 /*
-* File: Books.java
+* File: Book.java
 * Author: Nagy Bianka
 * Copyright: 2026, Nagy Bianka
 * Group: Szoft II/N
-* Date: 2026-10-21
+* Date: 2026-10-22
 * Github: https://github.com/Bianka-9/
 * Licenc: MIT
 */
 package com.example;
 
-public class Books {
+public class Book {
     int id;
     String title;
     String author;
     int year;
     int pages;
 
-    public Books() {
+    public Book() {
     }
 
-    public Books(String title, String author, int year, int pages) {
+
+    
+    @Override
+    public String toString() {
+        return "Book [id=" + id + ", title=" + title + ", author=" + author + ", year=" + year + ", pages=" + pages
+                + "]";
+    }
+
+
+
+    public Book(String title, String author, int year, int pages) {
         this.title = title;
         this.author = author;
         this.year = year;
         this.pages = pages;
     }
 
-    public Books(int id, String title, String author, int year, int pages) {
+    public Book(int id, String title, String author, int year, int pages) {
         this.id = id;
         this.title = title;
         this.author = author;

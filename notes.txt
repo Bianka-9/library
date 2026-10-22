@@ -1,6 +1,6 @@
 F1 > Java... > Maven project
-add .gitignore (leave database in for easier grading)
-add a readme.md if you want to
+add .gitignore (leave database in!)
+add a readme.md
 add dependencies in pom.xml (sqlite-jdbc from xerial)   OK
 check if mvc directory structure is needed [no]         OK
 
@@ -9,22 +9,36 @@ create-books-sqlite3-query
 insert-books-sqlite3-query
 
 
-how do i add this while this stays a comment and the file will connect the same time....? 
+
 -- File: create-books-sqlite3-query / insert ... 
--- Author: Nagy Bianka
--- Copyright: 2026, Nagy Bianka
--- Group: Szoft II/N
--- Date: 2026-10-21
--- Github: https://github.com/Bianka-9/
--- Licenc: MIT
+-- database: ../database.db
+
+    > no more interference between comment and database path
+        > -- database has to be on the upper section for the extension to read it (and to show the floating "Execute" btn)
 
 Database.java added
 Sqlite.java added
     try-catch
-Books.java added 
+
+Books.java added RENAMED(!) to Book.java
     constructors
     getters and setters
 
+BookService.java added
+    findAllBooks()
+    tryFindAllBooks()
+
+BookView.java
+        ...
+        System.out.printf("%3s %20s %20s %5s\n", "Id", " Cím", " Szerző", " Év");
+        ...
+        System.out.printf("%3d %20s %20s %5d\n", book.getId(), book.getTitle(), book.getAuthor(), book.getYear());
+
+        format matches (hopefully)
+
+BookController.java 
+
+small fixes
 
 
 

@@ -1,3 +1,11 @@
+-- File: create-books-sqlite3-query
+-- Author: Nagy Bianka
+-- Copyright: 2026, Nagy Bianka
+-- Group: Szoft II/N
+-- Date: 2026-10-21
+-- Github: https://github.com/Bianka-9/
+-- Licenc: MIT
+
 -- database: ../database.db
 
 create table books(
@@ -5,5 +13,4 @@ create table books(
   title varchar(100),
   author varchar(100),
   year integer,
-  pages integer
-);
+  pages integer);
