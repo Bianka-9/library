@@ -10,11 +10,11 @@
 package com.example;
 
 public class Book {
-    int id;
-    String title;
-    String author;
-    int year;
-    int pages;
+    private int id;
+    private String title;
+    private String author;
+    private int year;
+    private int pages;
 
     public Book() {
     }

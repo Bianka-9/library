@@ -1,3 +1,5 @@
+-- database: ../database.db
+
 -- File: create-books-sqlite3-query
 -- Author: Nagy Bianka
 -- Copyright: 2026, Nagy Bianka
@@ -5,8 +7,6 @@
 -- Date: 2026-10-21
 -- Github: https://github.com/Bianka-9/
 -- Licenc: MIT
-
--- database: ../database.db
 
 create table books(
   id integer not null primary key autoincrement,

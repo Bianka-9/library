@@ -40,5 +40,9 @@ BookController.java
 
 small fixes
 
+made Book's fields private
+try-catch block added to close resultset, statement, connection automatically
+
+
 
 

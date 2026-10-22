@@ -35,24 +35,28 @@ public class BookService {
     }
 
     private List<Book> tryFindAllBooks() throws SQLException{
-        Connection conn = this.database.connection();
+        List<Book> booksList = new ArrayList<>();
         String sql = "SELECT * FROM books";
 
+        try (
+        Connection conn = this.database.connection();
         Statement st = conn.createStatement();
-        ResultSet rs = st.executeQuery(sql);
+        ResultSet rs = st.executeQuery(sql)) {
 
-        List<Book> booksList = new ArrayList<>();
-        while(rs.next()){
-            Book book = new Book();
-            book.setId(rs.getInt("id"));
-            book.setTitle(rs.getString("title"));
-            book.setAuthor(rs.getString("author"));
-            book.setYear(rs.getInt("year"));
-            book.setPages(rs.getInt("pages"));
-            booksList.add(book);
-        }
-        conn.close();
+            while(rs.next()){
+                Book book = new Book();
+                book.setId(rs.getInt("id"));
+                book.setTitle(rs.getString("title"));
+                book.setAuthor(rs.getString("author"));
+                book.setYear(rs.getInt("year"));
+                book.setPages(rs.getInt("pages"));
+                booksList.add(book);
+                }
+
+        }catch (SQLException e) {
+            e.printStackTrace();
+        } 
+
         return booksList;
     }
-
 }
